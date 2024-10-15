@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            margin: 50px auto;
+            width: 500px;
+            height: 500px;
+            background-color: #053021;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .main {
+            margin: 50px;
+
+        }
+        .footer {
+            width: 400px;
+            height: 80px;
+            background-color: #117554;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            animation-name: box-ani;
+            animation-duration: 3s;
+            animation-fill-mode: both;
+            animation-play-state: running;
+        }
+
+        .white {
+            color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes box-ani {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="footer">
+            <h1 class="white">Welcome to Webpage!</h1>
+        </div>
+    </div>
+</body>
+</html>
